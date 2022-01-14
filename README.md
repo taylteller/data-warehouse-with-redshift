@@ -6,6 +6,8 @@ A fictional music streaming startup, Sparkify, want to move their processes and 
 
 The goal of this project is to create a Redshift cluster, build an ETL pipeline that extracts the data from S3, stages them in Redshift, and transforms data into a set of dimensional tables for the analytics team to continue finding insights into what songs their users are listening to.
 
+This project is part of the Udacity Data Engineering nanodegree.
+
 ## Databse Schema Design
 
 Data is transferred from the two staging tables in S3 into a star schema (one fact table where each row references data from multiple dimension tables). This schema design facilitates analytical querying, as it denormalizes data according to the particular aspects of the data we want to dig further into. In other words, it's optimized to minimize the number of JOINs required to query the data. 
